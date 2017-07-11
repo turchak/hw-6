@@ -1,7 +1,10 @@
 * {
   box-sizing: border-box;
 }
+
+
 /*FONT AWESOME*/
+
 @font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
@@ -18,6 +21,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .fa-bars:before {
   content: "\f0c9";
 }
@@ -45,7 +49,10 @@
 .fa-medium:before {
   content: "\f23a";
 }
+
+
 /*COMMON*/
+
 body {
   background: rgb(239, 239, 239);
   padding: 0 150px;
@@ -53,11 +60,13 @@ body {
 
 
 /*HEADER*/
+
 .product-navigation {
   margin-top: 50px;
   width: 100%;
   position: relative;
 }
+
 .product-logo {
   padding: 0;
   margin: 0;
@@ -69,13 +78,14 @@ body {
   text-align: left;
   color: #303030;
 }
+
 .product-menu {
   position: absolute;
   right: 20px;
   top: 0;
   letter-spacing: 30px;
-
 }
+
 .product-menu-link {
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
@@ -84,11 +94,14 @@ body {
   letter-spacing: 0.5px;
   color: #303030;
 }
+
 .product-slider {
   margin: 100px auto 0;
   font-size: 0;
   width: 100%;
+  height: 490px;
 }
+
 .product-slider-text {
   display: inline-block;
   font-size: 0;
@@ -97,6 +110,7 @@ body {
   margin: 0;
   text-align: right;
 }
+
 .product-slider-title {
   display: inline-block;
   margin: 0;
@@ -110,6 +124,7 @@ body {
   color: #303030;
   text-transform: uppercase;
 }
+
 .product-slider-description {
   display: inline-block;
   width: 100%;
@@ -122,15 +137,210 @@ body {
   letter-spacing: 0.6px;
   color: #303030;
   overflow: hidden;
-
 }
+
 .product-slider-project {
   display: inline-block;
-
+  margin-top: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+  color: #e10011;
 }
+
 .product-slider-img {
   display: inline-block;
   width: 50%;
   text-align: left;
   padding-left: 100px;
+}
+
+
+/*MAIN*/
+
+.product-gallery {
+  margin-top: 200px;
+  width: 100%;
+  height: 1190px;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+.product-gallery-title {
+  width: 100%;
+  padding: 100px 320px 0;
+  text-align: center;
+}
+
+.product-gallery-title h2 {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  color: #303030;
+}
+
+.product-gallery-title p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #303030;
+}
+
+.product-gallery-img {
+  width: 100%;
+  padding: 72px;
+  font-size: 0;
+  border-radius: 5px;
+}
+
+.product-gallert-top-img {
+  margin-bottom: 35px;
+  font-size: 0;
+}
+
+.gallery-pill {
+  display: inline-block;
+  background: url(../img/speaker-pill.jpg) no-repeat;
+  background-size: cover;
+  width: calc(200%/3 - 17.5px);
+  margin-right: 35px;
+  height: 387px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.product-gallert-down-img {
+  font-size: 0;
+}
+
+.gallery-dre {
+  display: inline-block;
+  background: url(../img/beats-by-dre.jpg) no-repeat;
+  background-size: cover;
+  width: calc(100%/3 - 17.5px);
+  height: 387px;
+  border-radius: 5px;
+}
+
+.gallery-desing {
+  position: relative;
+  display: inline-block;
+  width: calc(100%/3 - 70px/3);
+  margin-right: 35px;
+  height: 387px;
+  background: #DF0008;
+  border-radius: 5px;
+}
+
+.gallery-desing p {
+  position: absolute;
+  margin: 0;
+  padding: 264px 68px 58px 37px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.gallery-desing p::after {
+  content: "";
+  display: block;
+  margin-top: 11px;
+  width: 92px;
+  height: 5px;
+  background: #fff;
+}
+
+.gallery-shoes {
+  display: inline-block;
+  background: url(../img/men-shoes.jpg) no-repeat;
+  background-size: cover;
+  width: calc(100%/3 - 70px/3);
+  margin-right: 35px;
+  height: 387px;
+  border-radius: 5px;
+}
+
+.gallery-chair {
+  display: inline-block;
+  background: url(../img/chair.jpg) no-repeat 50% 0%;
+  background-size: cover;
+  width: calc(100%/3 - 70px/3);
+  height: 387px;
+  border-radius: 5px;
+}
+
+
+/*FOOTER*/
+
+.product-footer {
+  padding-top: 100px;
+}
+
+.footer-text {}
+
+.footer-text h2 {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 48px;
+  line-height: 0.6;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  text-align: center;
+  color: #303030;
+  text-transform: uppercase;
+}
+
+.footer-text p {
+  padding: 27px 325px 37px;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #303030;
+}
+
+.footer-subscribe {
+  display: block;
+  font-size: 0;
+}
+.footer-subscribe input {
+  display: inline-block;
+  border: none;
+  width: 495px;
+  height: 70px;
+  background: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.33;
+  letter-spacing: 0.5px;
+  color: #979797;
+  border-top-left-radius:35px;
+  border-bottom-left-radius:35px;
+
+
+}
+.footer-subscribe input::placeholder {
+  padding-left: 66px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.33;
+  letter-spacing: 0.5px;
+
 }
