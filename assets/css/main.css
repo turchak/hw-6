@@ -55,9 +55,13 @@
 
 body {
   background: rgb(239, 239, 239);
-  padding: 0 150px;
+  margin: 0 auto;
 }
-
+.container {
+  max-width: 1198px;
+  margin: 0 auto;
+  padding: 0;
+}
 
 /*HEADER*/
 
