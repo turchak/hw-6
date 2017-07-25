@@ -12,13 +12,12 @@ body {
 /*HEADER*/
 
 .nav {
+  position: relative;
   margin-top: 48px;
   width: 100%;
-  position: relative;
 }
 
 .logo {
-  position: relative;
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -33,7 +32,7 @@ body {
 .menu {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 5px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -41,7 +40,12 @@ body {
 
 .menu__item {
   display: inline-block;
-  margin-left: 38px;
+  margin-left: 31px;
+}
+
+.menu__item:nth-child(2) {
+  display: inline-block;
+  margin-left: 45px;
 }
 
 .menu__item-link {
@@ -61,7 +65,7 @@ body {
 /*SLIDER*/
 
 .slider {
-  margin: 100px auto 0;
+  margin: 109px auto 0;
   font-size: 0;
   width: 100%;
   height: 490px;
@@ -79,8 +83,9 @@ body {
 
 .slider__text-title {
   display: inline-block;
-  margin: 0;
+  margin: 0 -23px 0 0;
   padding: 0;
+  text-indent: -25px;
   width: 100%;
   font-family: 'Raleway', sans-serif;
   font-size: 150px;
@@ -90,31 +95,14 @@ body {
   color: rgb(48, 48, 48);
   text-transform: uppercase;
   text-align: right;
-}
-
-.slider__text-title2 {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 150px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 150px;
-  font-weight: 900;
-  line-height: 1;
-  letter-spacing: 3.8px;
-  color: rgb(48, 48, 48);
-  text-transform: uppercase;
-  text-align: right;
-  margin-right: -30px;
 }
 
 .slider__text-description {
   display: inline-block;
   width: 100%;
   height: 100px;
-  margin-top: 25px;
-  margin-right: -15px;
+  margin-top: 22px;
+  margin-right: -18px;
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
   font-weight: 300;
@@ -156,11 +144,12 @@ body {
 
 .gallery__text {
   width: 100%;
-  padding: 110px 320px 0;
+  padding: 106px 320px 0;
   text-align: center;
 }
 
 .gallery__text-title {
+  position: relative;
   font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 0;
@@ -171,12 +160,24 @@ body {
   color: rgb(48, 48, 48);
 }
 
+.gallery__text-title::after {
+  content: "";
+  position: absolute;
+  top: 63px;
+  left: calc(50% - 106.5px);
+  display: block;
+  width: 213px;
+  height: 17px;
+  background: url(../img/underline.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
 .gallery__text-image {
   margin-top: 10px;
 }
 
 .gallery__text-description {
-  margin: 0;
+  margin: 32px 0 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -194,8 +195,6 @@ body {
 }
 
 .gallery__img--item1 {
-  background: url(../img/speaker-pill.jpg) no-repeat;
-  background-size: cover;
   width: 65.5%;
   margin-right: 36px;
   height: 387px;
@@ -204,8 +203,6 @@ body {
 }
 
 .gallery__img--item2 {
-  background: url(../img/beats-by-dre.jpg) no-repeat;
-  background-size: cover;
   width: 31%;
   height: 387px;
   border-radius: 5px;
@@ -243,8 +240,6 @@ body {
 }
 
 .gallery__img--item4 {
-  background: url(../img/men-shoes.jpg) no-repeat;
-  background-size: cover;
   width: 31%;
   margin-right: 36px;
   margin-top: 35px;
@@ -254,8 +249,6 @@ body {
 }
 
 .gallery__img--item5 {
-  background: url(../img/chair.jpg) no-repeat 50% 0%;
-  background-size: cover;
   width: 31%;
   height: 387px;
   margin-top: 35px;
@@ -313,6 +306,7 @@ body {
 }
 
 .footer-form__input-text {
+  padding-left: 66px;
   border: none;
   width: 494px;
   height: 70px;
@@ -328,10 +322,10 @@ body {
   border-top-left-radius: 35px;
   border-bottom-left-radius: 35px;
   vertical-align: top;
+  outline: none;
 }
 
 .footer-form__input-text::placeholder {
-  padding-left: 66px;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 600;
@@ -388,4 +382,92 @@ body {
   font-weight: normal;
   font-size: 24px;
   color: rgb(255, 255, 255);
+}
+
+.footer-form__input-text:focus+.fa-envelope-o {
+  display: none;
+}
+
+.footer-social {
+  margin: 112px auto 57px;
+}
+
+.footer-social__buttons {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.footer-social__button {
+  position: relative;
+  display: inline-block;
+  margin: 0 8px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+}
+
+.footer-social__button--facebook::before {
+  position: absolute;
+  top: 17px;
+  left: 26px;
+  content: "\f09a";
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-size: 34px;
+  color: rgb(151, 151, 151);
+}
+
+.footer-social__button--twitter::before {
+  position: absolute;
+  top: 17px;
+  left: 22px;
+  content: "\f099";
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-size: 34px;
+  color: rgb(151, 151, 151);
+}
+
+.footer-social__button--youtube::before {
+  position: absolute;
+  top: 17px;
+  left: 22px;
+  content: "\f167";
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-size: 34px;
+  color: rgb(151, 151, 151);
+}
+
+.footer-social__button--medium::before {
+  position: absolute;
+  top: 17px;
+  left: 22px;
+  content: "\f23a";
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-size: 34px;
+  color: rgb(151, 151, 151);
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer-copyright__text {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgb(151, 151, 151);
+}
+
+.footer-copyright__link {
+  text-decoration: none;
+  color: rgb(48, 48, 48);
 }
