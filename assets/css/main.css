@@ -3,9 +3,9 @@
 }
 
 body {
-  background: rgb(238, 238, 238);
-  margin: 0 auto;
   max-width: 1198px;
+  margin: 0 auto;
+  background: rgb(238, 238, 238);
 }
 
 
@@ -13,25 +13,26 @@ body {
 
 .nav {
   position: relative;
-  margin-top: 48px;
   width: 100%;
+  margin-top: 48px;
 }
 
 .logo {
   padding: 0;
   margin: 0;
+  color: rgb(48, 48, 48);
   font-family: 'Roboto', sans-serif;
   font-size: 48px;
   font-weight: 900;
   line-height: 0.56;
   letter-spacing: 1.2px;
-  color: rgb(48, 48, 48);
+  text-decoration: none;
 }
 
 .menu {
   position: absolute;
-  right: 0;
   top: 5px;
+  right: 0;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -48,12 +49,12 @@ body {
 }
 
 .menu__item-link {
-  text-decoration: none;
+  color: rgb(48, 48, 48);
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.5px;
-  color: rgb(48, 48, 48);
+  text-decoration: none;
 }
 
 .fa-bars {
@@ -64,80 +65,80 @@ body {
 /*SLIDER*/
 
 .slider {
-  margin: 109px auto 0;
-  font-size: 0;
   width: 100%;
   height: 490px;
+  margin: 100px auto 0;
+  font-size: 0;
 }
 
 .slider__text {
   display: inline-block;
-  font-size: 0;
   width: 50%;
   padding: 0;
   margin: 0;
+  font-size: 0;
   text-align: right;
   vertical-align: top;
 }
 
 .slider__text-title {
   display: inline-block;
-  margin: 0 -23px 0 0;
-  padding: 0;
-  text-indent: -25px;
   width: 100%;
+  padding: 0;
+  margin: 0 -23px 0 0;
+  color: rgb(48, 48, 48);
   font-family: 'Raleway', sans-serif;
   font-size: 150px;
   font-weight: 900;
   line-height: 1;
   letter-spacing: 3.8px;
-  color: rgb(48, 48, 48);
-  text-transform: uppercase;
   text-align: right;
+  text-transform: uppercase;
+  text-indent: -25px;
 }
 
 .slider__text-description {
   display: inline-block;
+  overflow: hidden;
   width: 100%;
   height: 100px;
   margin-top: 22px;
   margin-right: -18px;
+  color: rgb(48, 48, 48);
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.6px;
-  color: rgb(48, 48, 48);
-  overflow: hidden;
 }
 
 .slider__text-link {
   display: inline-block;
-  text-decoration: none;
   margin-top: 20px;
   margin-right: -15px;
+  color: rgb(224, 0, 17);
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.5;
   letter-spacing: 0.6px;
-  color: rgb(224, 0, 17);
+  text-decoration: none;
 }
 
 .slider__image {
   display: inline-block;
   width: 50%;
-  text-align: left;
   padding-left: 120px;
+  text-align: left;
 }
 
 
 /*GALLERY*/
 
 .gallery {
-  margin-top: 185px;
   width: 100%;
   border-radius: 5px;
+  margin-top: 185px;
   background: rgb(255, 255, 255);
 }
 
@@ -149,14 +150,14 @@ body {
 
 .gallery__text-title {
   position: relative;
-  font-family: 'Raleway', sans-serif;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  color: rgb(48, 48, 48);
+  font-family: 'Raleway', sans-serif;
   font-size: 48px;
   font-weight: 900;
   letter-spacing: 1.2px;
   text-align: center;
-  color: rgb(48, 48, 48);
 }
 
 .gallery__text-title::after {
@@ -176,28 +177,28 @@ body {
 }
 
 .gallery__text-description {
-  margin: 32px 0 0;
   padding: 0;
+  margin: 32px 0 0;
+  color: rgb(48, 48, 48);
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   line-height: 1.35;
   letter-spacing: 0.5px;
   text-align: center;
-  color: rgb(48, 48, 48);
 }
 
 .gallery__img {
   width: 100%;
   padding: 72px;
-  font-size: 0;
   border-radius: 5px;
+  font-size: 0;
 }
 
 .gallery__img--item1 {
   width: 65.5%;
-  margin-right: 36px;
   height: 387px;
   border-radius: 5px;
+  margin-right: 36px;
   float: left;
 }
 
@@ -211,47 +212,47 @@ body {
 .gallery__img--item3 {
   position: relative;
   width: 31%;
+  height: 387px;
+  border-radius: 5px;
   margin-right: 36px;
   margin-top: 35px;
-  height: 387px;
   background: rgb(223, 0, 8);
-  border-radius: 5px;
   float: left;
 }
 
 .gallery__img--text {
   position: absolute;
-  margin: 0;
   padding: 260px 63px 58px 37px;
+  margin: 0;
+  color: rgb(255, 255, 255);
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
   font-weight: 900;
-  color: rgb(255, 255, 255);
 }
 
 .gallery__img--text::after {
   content: "";
   display: block;
-  margin-top: 11px;
   width: 92px;
   height: 5px;
+  margin-top: 11px;
   background: rgb(255, 255, 255);
 }
 
 .gallery__img--item4 {
   width: 31%;
-  margin-right: 36px;
-  margin-top: 35px;
   height: 387px;
   border-radius: 5px;
+  margin-right: 36px;
+  margin-top: 35px;
   float: left;
 }
 
 .gallery__img--item5 {
   width: 31%;
   height: 387px;
-  margin-top: 35px;
   border-radius: 5px;
+  margin-top: 35px;
   float: left;
 }
 
@@ -269,9 +270,9 @@ body {
 }
 
 .footer-text {
+  color: rgb(48, 48, 48);
   font-family: 'Raleway', sans-serif;
   text-align: center;
-  color: rgb(48, 48, 48);
 }
 
 .footer-text__title {
@@ -293,33 +294,33 @@ body {
 }
 
 .footer-form {
-  display: block;
   position: relative;
-  font-size: 0;
+  display: block;
   text-align: center;
+  font-size: 0;
 }
 
 .footer-form__input {
-  display: inline-block;
   position: relative;
+  display: inline-block;
 }
 
 .footer-form__input-text {
-  padding-left: 66px;
-  border: none;
   width: 494px;
   height: 70px;
+  padding-left: 66px;
+  border: none;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
   margin: 0 auto;
   background: rgb(255, 255, 255);
+  color: rgb(150, 150, 150);
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 600;
   font-style: italic;
   line-height: 1.33;
   letter-spacing: 0.5px;
-  color: rgb(150, 150, 150);
-  border-top-left-radius: 35px;
-  border-bottom-left-radius: 35px;
   vertical-align: top;
   outline: none;
 }
@@ -337,39 +338,41 @@ body {
   position: absolute;
   top: 23px;
   left: 32px;
+  color: rgb(151, 151, 151);
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.5px;
   text-align: center;
-  color: rgb(151, 151, 151);
 }
 
 .footer-form__button {
-  display: inline-block;
   position: relative;
+  display: inline-block;
 }
 
 .footer-form__button-send {
-  padding: 0;
-  margin: 0;
-  border: none;
   width: 208px;
   height: 70px;
+  padding: 0;
+  border: none;
   border-top-right-radius: 35px;
   border-bottom-right-radius: 35px;
+  margin: 0;
   vertical-align: top;
   background: rgb(225, 0, 17);
+  cursor: pointer;
+  outline: none;
 }
 
 .footer-form__button-text {
   position: absolute;
   top: 30px;
   left: 56px;
+  color: rgb(255, 255, 255);
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 900;
   line-height: 13px;
-  color: rgb(255, 255, 255);
   text-transform: uppercase;
 }
 
@@ -377,15 +380,15 @@ body {
   position: absolute;
   top: 23px;
   left: 157px;
+  color: rgb(255, 255, 255);
   font-family: "FontAwesome";
   font-weight: normal;
   font-size: 24px;
-  color: rgb(255, 255, 255);
 }
 
-.footer-form__input-text:focus+.fa-envelope-o {
+/*.footer-form__input-text:focus+.fa-envelope-o {
   display: none;
-}
+}*/
 
 .footer-social {
   margin: 112px auto 57px;
@@ -393,80 +396,87 @@ body {
 
 .footer-social__buttons {
   padding: 0;
-  list-style: none;
   text-align: center;
+  list-style: none;
 }
 
 .footer-social__button {
   position: relative;
   display: inline-block;
-  margin: 0 8px;
   width: 70px;
   height: 70px;
   border-radius: 50%;
+  margin: 0 8px;
   background: rgb(255, 255, 255);
 }
 
+.footer-social-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
 .footer-social__button--facebook::before {
+  content: "\f09a";
   position: absolute;
   top: 17px;
   left: 26px;
-  content: "\f09a";
+  color: rgb(151, 151, 151);
   font-family: "FontAwesome";
   font-weight: normal;
   font-size: 34px;
-  color: rgb(151, 151, 151);
 }
 
 .footer-social__button--twitter::before {
+  content: "\f099";
   position: absolute;
   top: 17px;
   left: 22px;
-  content: "\f099";
+  color: rgb(151, 151, 151);
   font-family: "FontAwesome";
   font-weight: normal;
   font-size: 34px;
-  color: rgb(151, 151, 151);
 }
 
 .footer-social__button--youtube::before {
+  content: "\f167";
   position: absolute;
   top: 17px;
   left: 22px;
-  content: "\f167";
+  color: rgb(151, 151, 151);
   font-family: "FontAwesome";
   font-weight: normal;
   font-size: 34px;
-  color: rgb(151, 151, 151);
 }
 
 .footer-social__button--medium::before {
+  content: "\f23a";
   position: absolute;
   top: 17px;
   left: 22px;
-  content: "\f23a";
+  color: rgb(151, 151, 151);
   font-family: "FontAwesome";
   font-weight: normal;
   font-size: 34px;
-  color: rgb(151, 151, 151);
 }
 
 .footer-copyright {
-  text-align: center;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .footer-copyright__text {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  color: rgb(151, 151, 151);
   font-family: Raleway;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.5px;
-  color: rgb(151, 151, 151);
 }
 
 .footer-copyright__link {
-  text-decoration: none;
   color: rgb(48, 48, 48);
+  text-decoration: none;
 }
