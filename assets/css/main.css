@@ -15,13 +15,13 @@ body {
   position: relative;
   width: 100%;
   margin-top: 48px;
+  font-family: 'Roboto', sans-serif;
 }
 
-.logo {
+.nav__logo {
   padding: 0;
   margin: 0;
   color: rgb(48, 48, 48);
-  font-family: 'Roboto', sans-serif;
   font-size: 48px;
   font-weight: 900;
   line-height: 0.56;
@@ -50,7 +50,6 @@ body {
 
 .menu__item-link {
   color: rgb(48, 48, 48);
-  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.5px;
@@ -386,10 +385,6 @@ body {
   font-size: 24px;
 }
 
-/*.footer-form__input-text:focus+.fa-envelope-o {
-  display: none;
-}*/
-
 .footer-social {
   margin: 112px auto 57px;
 }
@@ -470,7 +465,7 @@ body {
   padding: 0;
   margin: 0;
   color: rgb(151, 151, 151);
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.5px;
